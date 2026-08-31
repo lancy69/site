@@ -1,0 +1,15 @@
+#let page(
+  title: [Typst Page],
+  stylesheet: "/styles.css",
+  icon: "/favicon.ico",
+  body,
+) = html.html({
+	html.head({
+		html.title(title)
+		html.link(rel: "stylesheet", href: stylesheet)
+		html.link(rel: "icon", href: icon)
+  })
+	html.body({
+		html.main(body)
+  })
+})

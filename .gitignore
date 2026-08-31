@@ -1,0 +1,3 @@
+/dist/*
+!/dist/favicon.ico
+!/dist/styles.css
