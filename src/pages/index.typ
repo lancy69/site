@@ -1,6 +1,6 @@
 #import "../lib/page.typ": page
 
-#show: page.with(title: [Lancy's Personal Site])
+#show: page.with(title: [Lancy])
 
 #title([Welcome to my personal site!])
 
