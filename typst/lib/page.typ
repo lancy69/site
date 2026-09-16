@@ -2,7 +2,8 @@
   title: [Typst Page],
   stylesheet: "/styles.css",
   icon: "/favicon.ico",
-  body,
+  body-attrs: (:),
+  content,
 ) = html.html({
 	html.head({
 		html.elem("meta", attrs: (charset: "utf-8"))
@@ -10,7 +11,7 @@
 		html.link(rel: "stylesheet", href: stylesheet)
 		html.link(rel: "icon", href: icon)
   })
-	html.body({
-		html.main(body)
+	html.elem("body", attrs: body-attrs, {
+		html.main(content)
   })
 })
