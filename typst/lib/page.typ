@@ -5,6 +5,7 @@
   body,
 ) = html.html({
 	html.head({
+		html.elem("meta", attrs: (charset: "utf-8"))
 		html.title(title)
 		html.link(rel: "stylesheet", href: stylesheet)
 		html.link(rel: "icon", href: icon)

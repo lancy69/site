@@ -1,4 +1,4 @@
-#let pages = ("index",)
+#let pages = ("index", "about/index", "blog/index")
 
 #asset("styles.css", read("assets/styles.css", encoding: none))
 #asset("favicon.ico", read("assets/favicon.ico", encoding: none))

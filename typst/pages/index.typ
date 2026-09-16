@@ -5,3 +5,5 @@
 #title([Welcome to my personal site!])
 
 Something thoughtful is taking shape here.
+
+#link("/about/")[about] · #link("/blog/")[blog]
