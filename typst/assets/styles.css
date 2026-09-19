@@ -1,5 +1,5 @@
 :root {
-	color-scheme: light dark;
+	color-scheme: dark;
 }
 
 @font-face {
@@ -35,6 +35,8 @@
 }
 
 body {
+	background-color: #24283b;
+	color: #c0caf5;
 	font-family: "Libertinus Serif", "Georgia", "Times New Roman",
 		"Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
 	font-size: 15pt;
