@@ -21,6 +21,6 @@
   let settings = dictionary(mod).at("settings", default: (:))
   document("blog/" + p + ".html", ..metadata)[
     #set raw(theme: "assets/syntax.tmTheme")
-    #post(..metadata, ..settings)[#include "pages/blog/" + p + ".typ"]
+    #post(id: p, ..metadata, ..settings)[#include "pages/blog/" + p + ".typ"]
   ]
 }
