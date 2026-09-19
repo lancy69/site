@@ -14,6 +14,12 @@
     html.link(rel: "stylesheet", href: "/styles.css")
   })
   html.elem("body", attrs: (class: "post"), {
-    html.main(body)
+    html.main({
+      html.elem("header", {
+        html.elem("h1", title)
+        html.elem("time", attrs: (datetime: date.display()), date.display())
+      })
+      body
+    })
   })
 })
