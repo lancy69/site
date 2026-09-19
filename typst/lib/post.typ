@@ -1,9 +1,11 @@
 #let post(
+  id: none,
   title: [Untitled],
   author: "Lancy",
   description: [],
   keywords: ("typst"),
   date: datetime(year: 2005, month: 9, day: 3),
+  show-outline: true,
   body,
 ) = html.html({
   html.head({
@@ -19,7 +21,16 @@
         html.elem("h1", title)
         html.elem("time", attrs: (datetime: date.display()), date.display())
       })
-      body
+      {
+        let start = label(id + "-start")
+        let end = label(id + "-end")
+        [#metadata("start of the post")#start]
+        if (show-outline) {
+          outline(target: selector(heading).after(start).before(end))
+        }
+        body
+        [#metadata("end of the post")#end]
+      }
     })
   })
 })

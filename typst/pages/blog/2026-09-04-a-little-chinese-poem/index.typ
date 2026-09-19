@@ -5,6 +5,9 @@
   keywords: ("poem"),
   date: datetime(year: 2026, month: 9, day: 4),
 )
+#let settings = (
+  show-outline: false,
+)
 
 见野花
 

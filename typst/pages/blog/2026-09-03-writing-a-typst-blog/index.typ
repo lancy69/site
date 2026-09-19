@@ -6,8 +6,6 @@
   date: datetime(year: 2026, month: 9, day: 3),
 )
 
-#outline()
-
 = Level 2 heading
 
 When #link("https://typst.app/docs/reference/model/heading/#html-export")[exporting to HTML], Typst headings start from level 2 instead of level 1.
