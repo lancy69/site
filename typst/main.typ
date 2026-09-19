@@ -1,4 +1,5 @@
-#import "lib/page.typ": page
+#import "lib/post.typ": post
+#import "pages/blog/index.typ": posts
 
 #asset("favicon.ico", read("assets/favicon.ico", encoding: none))
 #asset("styles.css", read("assets/styles.css", encoding: none))
@@ -12,4 +13,11 @@
 #for p in pages {
   import "pages/" + p + ".typ": metadata
   document(p + ".html", ..metadata)[#include "pages/" + p + ".typ"]
+}
+
+#for p in posts {
+  import "pages/blog/" + p + ".typ": metadata
+  document("blog/" + p + ".html", ..metadata)[
+    #post(..metadata)[#include "pages/blog/" + p + ".typ"]
+  ]
 }

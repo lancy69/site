@@ -35,7 +35,8 @@
 }
 
 body {
-	font-family: "Libertinus Serif", "Georgia", "Times New Roman", serif;
+	font-family: "Libertinus Serif", "Georgia", "Times New Roman",
+		"Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
 	font-size: 15pt;
 }
 
@@ -43,6 +44,15 @@ main {
 	margin: 0 auto;
 	max-width: 42rem;
 	padding: 2rem 1rem;
+}
+
+code {
+	font-family: "Maple Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-feature-settings: "calt" 0, "cv01" 1, "cv02" 1, "cv04" 1;
+}
+
+:not(pre) > code {
+	font-size: 0.75em;
 }
 
 body.home {
@@ -62,24 +72,3 @@ body.home {
 	display: flex;
 	gap: 1rem;
 }
-
-/* /* article h1 { */ */
-/* /* 	font-size: 2.5rem; */ */
-/* /* 	line-height: 1.1; */ */
-/* /* 	margin-block-end: 0.25rem; */ */
-/* /* } */ */
-/* /**/ */
-/* /* article time { */ */
-/* /* 	color: gray; */ */
-/* /* 	display: block; */ */
-/* /* 	font-size: 0.9rem; */ */
-/* /* } */ */
-/**/
-/* code { */
-/* 	font-family: "Maple Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; */
-/* 	font-feature-settings: "calt" 0, "cv01" 1, "cv02" 1, "cv04" 1; */
-/* } */
-/**/
-/* :not(pre) > code { */
-/* 	font-size: 0.75em; */
-/* } */
