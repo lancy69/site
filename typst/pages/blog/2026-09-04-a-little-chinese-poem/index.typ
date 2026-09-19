@@ -2,7 +2,7 @@
   title: [A little Chinese poem],
   author: "Lancy",
   description: [],
-  keywords: ("typst"),
+  keywords: ("poem"),
   date: datetime(year: 2026, month: 9, day: 4),
 )
 
