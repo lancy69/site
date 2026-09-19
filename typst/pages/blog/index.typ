@@ -20,11 +20,11 @@
     html.main({
       title([Blog])
 
-      html.elem("ul", attrs: (class: "blog-post-list"), {
+      html.elem("ul", {
         for post in posts {
           import post + ".typ": metadata
 
-          html.elem("li", attrs: (class: "blog-post-list-item"), {
+          html.elem("li", {
             html.elem("time", attrs: (datetime: metadata.date.display()), {
               metadata.date.display()
             })

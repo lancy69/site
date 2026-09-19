@@ -63,11 +63,11 @@ body.home {
 	text-align: center;
 }
 
-.blog-post-list {
+.blog ul {
 	line-height: 2rem;
 }
 
-.blog-post-list-item {
+.blog ul li {
 	align-items: baseline;
 	display: flex;
 	gap: 1rem;
