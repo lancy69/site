@@ -1,16 +1,15 @@
-#let fonts = ("Regular", "Italic", "Bold", "BoldItalic")
-#let pages = ("index", "about/index", "blog/index")
+#import "lib/page.typ": page
 
-#asset("styles.css", read("assets/styles.css", encoding: none))
 #asset("favicon.ico", read("assets/favicon.ico", encoding: none))
+#asset("styles.css", read("assets/styles.css", encoding: none))
 
-#for font in fonts {
-  asset(
-    "fonts/MapleMono-" + font + ".woff2",
-    read("assets/fonts/MapleMono-" + font + ".woff2", encoding: none),
-  )
-}
+#asset("fonts/MapleMono-Regular.woff2", read("assets/fonts/MapleMono-Regular.woff2", encoding: none))
+#asset("fonts/MapleMono-Italic.woff2", read("assets/fonts/MapleMono-Italic.woff2", encoding: none))
+#asset("fonts/MapleMono-Bold.woff2", read("assets/fonts/MapleMono-Bold.woff2", encoding: none))
+#asset("fonts/MapleMono-BoldItalic.woff2", read("assets/fonts/MapleMono-BoldItalic.woff2", encoding: none))
 
-#for page in pages {
-  document(page + ".html")[#include "pages/" + page + ".typ"]
+#let pages = ("index", "about/index", "blog/index")
+#for p in pages {
+  import "pages/" + p + ".typ": metadata
+  document(p + ".html", ..metadata)[#include "pages/" + p + ".typ"]
 }
