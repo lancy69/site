@@ -1,41 +1,11 @@
+@import url("/fonts.css");
+
 :root {
 	color-scheme: dark;
 	--bg: #24283b;
 	--fg: #c0caf5;
 	--blue: #7aa2f7;
 	--cyan: #7dcfff;
-}
-
-@font-face {
-	font-family: "Maple Mono";
-	src: url("/fonts/MapleMono-Regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Maple Mono";
-	src: url("/fonts/MapleMono-Italic.woff2") format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Maple Mono";
-	src: url("/fonts/MapleMono-Bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Maple Mono";
-	src: url("/fonts/MapleMono-BoldItalic.woff2") format("woff2");
-	font-weight: 700;
-	font-style: italic;
-	font-display: swap;
 }
 
 body {

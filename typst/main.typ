@@ -2,6 +2,7 @@
 #import "pages/blog/index.typ": posts
 
 #asset("favicon.ico", read("assets/favicon.ico", encoding: none))
+#asset("fonts.css", read("assets/fonts.css"), encoding: none)
 #asset("styles.css", read("assets/styles.css", encoding: none))
 
 #asset("fonts/MapleMono-Regular.woff2", read("assets/fonts/MapleMono-Regular.woff2", encoding: none))
