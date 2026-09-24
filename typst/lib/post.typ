@@ -9,7 +9,7 @@
   keywords: ("typst"),
   date: datetime(year: 2005, month: 9, day: 3),
   // HTML and post-specific fields.
-  html-attrs: (style: "post"),
+  html-attrs: (class: "post"),
   show-outline: true,
   body,
 ) = html.html({
