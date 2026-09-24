@@ -1,0 +1,29 @@
+when:
+  - event: [push, manual]
+    branch: [main]
+
+engine: nixery
+
+dependencies:
+  nixpkgs:
+    - curl
+    - gnutar
+    - xz
+    - gnumake
+    - nodejs
+
+steps:
+  - name: Build site
+    command: |
+      set -euo pipefail
+      target="$(uname -m)-unknown-linux-musl"
+      curl -fsSL \
+        "https://github.com/typst/typst/releases/download/v0.15.1/typst-${target}.tar.xz" \
+        -o /tmp/typst.tar.xz
+      mkdir -p .tools
+      tar -xJf /tmp/typst.tar.xz -C .tools --strip-components=1
+      export PATH="$PWD/.tools:$PATH"
+      make pub
+
+  - name: Deploy to Cloudflare Pages
+    command: npx --yes wrangler@4 pages deploy dist --project-name=site --branch=main
