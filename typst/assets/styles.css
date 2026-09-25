@@ -3,8 +3,7 @@
 :root {
 	color-scheme: dark;
 
-	--font-family: "Libertinus Serif", "Georgia", "Times New Roman",
-		"Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+	--font: "Libertinus Serif", "Georgia", "Times New Roman";
 
 	--bg: #24283b;
 	--fg: #c0caf5;
@@ -16,7 +15,7 @@
 body {
 	background-color: var(--bg);
 	color: var(--fg);
-	font-family: var(--font-family);
+	font-family: var(--font), STSong, serif;
 	font-size: 15pt;
 }
 
@@ -24,6 +23,15 @@ main {
 	margin: 0 auto;
 	max-width: 42rem;
 	padding: 2rem 1rem;
+}
+
+strong {
+	font-family: var(--font), STHeiti, sans-serif;
+	font-weight: normal;
+}
+em {
+	font-family: var(--font), STKaiti, cursive;
+	font-style: normal;
 }
 
 a, a:visited {
@@ -38,7 +46,6 @@ code {
 	font-family: "Maple Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 	font-feature-settings: "calt" 0, "cv01" 1, "cv02" 1, "cv04" 1;
 }
-
 :not(pre) > code {
 	font-size: 0.75em;
 }
