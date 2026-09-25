@@ -56,6 +56,6 @@ See @best.
 
 = Behind the scene
 
-Check out the #link("https://github.com/lancy69/site")[source code] of this page:
+Check out the #link("https://tangled.org/lancy.tngl.sh/site/blob/main/typst/pages/blog/2026-09-03-writing-a-typst-blog/index.typ")[source code] of this page:
 
 #raw(lang: "typst", read("index.typ"))
