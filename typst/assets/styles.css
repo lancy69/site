@@ -6,6 +6,7 @@
 	--font: "Libertinus Serif", "Georgia", "Times New Roman";
 
 	--bg: #24283b;
+	--bg-dark: #1f2335;
 	--fg: #c0caf5;
 	--blue: #7aa2f7;
 	--cyan: #7dcfff;
@@ -45,9 +46,14 @@ a:hover {
 code {
 	font-family: "Maple Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 	font-feature-settings: "calt" 0, "cv01" 1, "cv02" 1, "cv04" 1;
-}
-:not(pre) > code {
 	font-size: 0.75em;
+}
+pre {
+	background: var(--bg-dark);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
 }
 
 body.home {
