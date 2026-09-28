@@ -7,6 +7,7 @@
 
 	--bg: #24283b;
 	--bg-dark: #1f2335;
+	--bg-highlight: #292e42;
 	--fg: #c0caf5;
 	--blue: #7aa2f7;
 	--cyan: #7dcfff;
@@ -54,6 +55,20 @@ pre {
 	border-radius: 0.5rem;
 	white-space: pre-wrap;
 	overflow-wrap: anywhere;
+}
+
+.quote {
+	margin: 1.5rem 0;
+	padding: 1rem;
+	border-left: 3px solid var(--blue);
+	background: var(--bg-highlight);
+}
+.quote blockquote {
+	margin: 0
+}
+.quote > p {
+	margin: 0.5rem 0 0 0;
+	text-align: right;
 }
 
 body.home {

@@ -7,6 +7,8 @@
     html.elem("div", attrs: (style: "text-align: " + a), it.body)
   }
 
+  show quote.where(block: true): it => html.elem("div", attrs: (class: "quote"), it)
+
   // show text: it => context {
   //   let font = text.font
   //   html.elem("span",
