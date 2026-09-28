@@ -4,6 +4,7 @@
 )
 
 #let posts = (
+  "2026-09-28-talk-isnt-cheap/index",
   "2026-09-03-writing-a-typst-blog/index",
   "2023-11-22-a-little-chinese-poem/index",
 )
