@@ -3,7 +3,7 @@
   author: "Lancy",
   description: [],
   keywords: ("reflection"),
-  date: datetime(year: 2026, month: 9, day: 3),
+  date: datetime(year: 2026, month: 9, day: 28),
 )
 
 #quote(block: true, attribution: "Linus Torvalds")[
