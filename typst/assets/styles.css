@@ -57,6 +57,16 @@ pre {
 	overflow-wrap: anywhere;
 }
 
+/* figure */
+figure img {
+	height: auto;
+	border-radius: 8px;
+}
+figure figcaption {
+	margin-top: 8px;
+	text-align: center;
+}
+
 .quote {
 	margin: 1.5rem 0;
 	padding: 1rem;
