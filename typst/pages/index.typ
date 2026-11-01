@@ -1,5 +1,5 @@
 #let metadata = (
-  title: [Lancy\'s site],
+  title: [Lancy's site],
   author: "Lancy",
 )
 
