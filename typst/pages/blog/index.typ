@@ -5,6 +5,7 @@
 
 #let posts = (
   "2026-09-03-writing-a-typst-blog/index",
+  "2026-11-01-capslock-resurrection/index",
 )
 
 #html.html({
