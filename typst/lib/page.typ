@@ -8,6 +8,7 @@
   }
 
   show quote.where(block: true): it => html.elem("div", attrs: (class: "quote"), it)
+  show quote.where(block: false): it => html.elem("span", attrs: (class: "quote"), it)
 
   // show text: it => context {
   //   let font = text.font
