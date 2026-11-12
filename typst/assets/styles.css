@@ -3,7 +3,7 @@
 :root {
 	color-scheme: dark;
 
-	--font: "Libertinus Serif", "Georgia", "Times New Roman";
+	--font: "Libertinus Serif", "Georgia", "Times New Roman", serif;
 
 	--bg: #24283b;
 	--bg-dark: #1f2335;
@@ -17,7 +17,7 @@
 body {
 	background-color: var(--bg);
 	color: var(--fg);
-	font-family: var(--font), STSong, serif;
+	font-family: var(--font);
 	font-size: 15pt;
 }
 
@@ -25,15 +25,6 @@ main {
 	margin: 0 auto;
 	max-width: 42rem;
 	padding: 2rem 1rem;
-}
-
-strong {
-	font-family: var(--font), STHeiti, sans-serif;
-	font-weight: normal;
-}
-em {
-	font-family: var(--font), STKaiti, cursive;
-	font-style: normal;
 }
 
 a, a:visited {
