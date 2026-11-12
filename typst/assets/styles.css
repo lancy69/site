@@ -1,5 +1,3 @@
-@import url("/fonts.css");
-
 :root {
 	color-scheme: dark;
 
@@ -36,7 +34,7 @@ a:hover {
 }
 
 code {
-	font-family: "Maple Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-family: "Maple Mono NFMono CN", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 	font-feature-settings: "calt" 0, "cv01" 1, "cv02" 1, "cv04" 1;
 	font-size: 0.75em;
 }
