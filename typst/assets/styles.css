@@ -1,8 +1,6 @@
 :root {
 	color-scheme: dark;
-
-	--font: "Libertinus Serif", "Georgia", "Times New Roman", serif;
-
+	--font: "Libertinus Serif", Georgia, "Times New Roman", "FZ-CJK-SC", serif;
 	--bg: #24283b;
 	--bg-dark: #1f2335;
 	--bg-highlight: #292e42;
