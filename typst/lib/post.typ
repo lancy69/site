@@ -18,6 +18,7 @@
     html.title(title)
     html.link(rel: "author", href: author)
     html.link(rel: "icon", href: "/favicon.ico")
+    html.link(rel: "stylesheet", href: "/fonts/fz-cjk-sc.css")
     html.link(rel: "stylesheet", href: "/fonts/maple-mono-nfmono-cn.css")
     html.link(rel: "stylesheet", href: "/styles.css")
   })
