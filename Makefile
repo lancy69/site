@@ -7,14 +7,9 @@ help:
 	@echo 'Run `make pub` to build the site into `dist/` with Typst bundle export.'
 
 assets:
-	@find typst/assets \
-		-name '.*' -prune -o \
-		-type f \
-		! -path 'typst/assets/.index' \
-		! -path 'typst/assets/.index.tmp' \
-		-print \
+	@find typst/assets -name '.*' -prune -o -type f -print \
+		| sed -e 's|^typst/assets/||' \
 		| LC_ALL=C sort \
-		| sed 's|^typst/assets/||' \
 		> typst/assets/.index.tmp
 	@mv typst/assets/.index.tmp typst/assets/.index
 
