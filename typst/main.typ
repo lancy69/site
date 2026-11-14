@@ -1,7 +1,7 @@
 #import "lib/post.typ": post
 #import "pages/blog/index.typ": posts
 
-#let paths = read("assets/index").trim().split("\n")
+#let paths = read("assets/.index").trim().split("\n")
 #for p in paths {
   asset(p, read("assets/" + p, encoding: none))
 }

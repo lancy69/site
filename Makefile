@@ -10,13 +10,13 @@ assets:
 	@find typst/assets \
 		-name '.*' -prune -o \
 		-type f \
-		! -path 'typst/assets/index' \
-		! -path 'typst/assets/index.tmp' \
+		! -path 'typst/assets/.index' \
+		! -path 'typst/assets/.index.tmp' \
 		-print \
 		| LC_ALL=C sort \
 		| sed 's|^typst/assets/||' \
-		> typst/assets/index.tmp
-	@mv typst/assets/index.tmp typst/assets/index
+		> typst/assets/.index.tmp
+	@mv typst/assets/.index.tmp typst/assets/.index
 
 clean:
 	rm -rf dist
