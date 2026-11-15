@@ -1,7 +1,7 @@
 #import "page.typ": page
 
 #let post(
-  // Standard document fields
+  // Standard document fields.
   id: none,
   title: [Untitled],
   author: "Lancy",
