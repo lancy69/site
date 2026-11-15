@@ -79,11 +79,15 @@ body.home {
 .blog ul {
 	line-height: 2rem;
 }
-
 .blog ul li {
 	align-items: baseline;
 	display: flex;
 	gap: 1rem;
+}
+.blog ul li > div > p {
+	color: var(--gray);
+	font-size: 0.85em;
+	margin: 0;
 }
 
 .post header {

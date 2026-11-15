@@ -1,5 +1,5 @@
 #let metadata = (
-  title: [Lancy\'s blog],
+  title: [Lancy's blog],
   author: "Lancy",
 )
 
@@ -13,6 +13,8 @@
     html.title(metadata.title)
     html.link(rel: "author", href: metadata.author)
     html.link(rel: "icon", href: "/favicon.ico")
+    html.link(rel: "stylesheet", href: "/fonts/fz-cjk-sc.css")
+    html.link(rel: "stylesheet", href: "/fonts/maple-mono-nfmono-cn.css")
     html.link(rel: "stylesheet", href: "/styles.css")
   })
   html.elem("body", attrs: (class: "blog"), {
@@ -27,7 +29,10 @@
             html.elem("time", attrs: (datetime: metadata.date.display()), {
               metadata.date.display()
             })
-            link("/blog/" + post.trim("index", at: end), metadata.title)
+            html.elem("div", {
+              link("/blog/" + post.trim("index", at: end), metadata.title)
+              html.elem("p", metadata.description)
+            })
           })
         }
       })

@@ -10,6 +10,7 @@
   date: datetime(year: 2005, month: 9, day: 3),
   // HTML and post-specific fields.
   html-attrs: (class: "post"),
+  lang: "zh",
   show-outline: true,
   body,
 ) = html.html({
