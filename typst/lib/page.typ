@@ -1,5 +1,39 @@
+#let page(
+  path,
+  title: [Untitled],
+  author: "Lancy",
+  description: [],
+  keywords: ("typst"),
+  date: datetime(year: 2005, month: 9, day: 3),
+  body-attrs: (:),
+  lang: "en",
+  body,
+) = document(
+  path + ".html",
+  title: title,
+  author: author,
+  description: description,
+  keywords: keywords,
+  date: date,
+  html.html(lang: lang, {
+    html.head({
+      html.meta(charset: "utf-8")
+      html.meta(name: "author", content: author)
+      html.meta(name: "viewport", content: "width=device-width, initial-scale=1")
+      html.title(title)
+      html.link(rel: "icon", href: "/favicon.ico")
+      html.link(rel: "stylesheet", href: "/fonts/fz-cjk-sc.css")
+      html.link(rel: "stylesheet", href: "/fonts/maple-mono-nfmono-cn.css")
+      html.link(rel: "stylesheet", href: "/styles.css")
+    })
+    html.elem("body", attrs: body-attrs, {
+      html.main(body)
+    })
+  })
+)
+
 // Wrappers to make functions exporting to HTML align with PDF.
-#let page(body) = {
+#let mappings(body) = {
   // TODO: wait for the official approach.
   show align: it => {
     let x = it.alignment.x
