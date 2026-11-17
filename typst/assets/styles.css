@@ -68,6 +68,7 @@ figure figcaption {
 	text-align: right;
 }
 
+/*
 body.home {
 	align-items: center;
 	display: flex;
@@ -75,6 +76,7 @@ body.home {
 	min-height: 100dvh;
 	text-align: center;
 }
+*/
 
 .blog ul {
 	line-height: 2rem;

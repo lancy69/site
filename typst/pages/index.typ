@@ -6,8 +6,6 @@
   body-attrs: (class: "home"),
 )
 
-#title([Welcome to my personal site!])
+#title([Lancy])
 
-Something thoughtful is taking shape here.
-
-#link("/about/")[about] · #link("/blog/")[blog]
+I sometimes write something in my #link("/blog")[blog].

@@ -7,7 +7,7 @@
   asset(p, read("assets/" + p, encoding: none))
 }
 
-#let pages = ("index", "about/index", "blog/index")
+#let pages = ("index", "blog/index")
 #for p in pages {
   import "pages/" + p + ".typ": metadata
   page(p, ..metadata)[#include "pages/" + p + ".typ"]
