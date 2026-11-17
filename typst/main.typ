@@ -14,7 +14,7 @@
 }
 
 #for p in posts {
-  import "pages/blog/" + p + ".typ" as mod
+  import "pages/blog/" + p + "/index.typ" as mod
   let metadata = dictionary(mod).at("metadata", default: (:))
-  post("blog/" + p, ..metadata)[#include "pages/blog/" + p + ".typ"]
+  post("blog/" + p + "/index", ..metadata)[#include "pages/blog/" + p + "/index.typ"]
 }
