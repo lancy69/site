@@ -5,6 +5,7 @@
 )
 
 #let posts = (
+  "2026-11-17-construction-and-deconstruction",
   "2026-09-03-writing-blogs-with-typst",
 )
 
